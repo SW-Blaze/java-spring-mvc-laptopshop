@@ -18,7 +18,8 @@ public class UserController {
 
     @RequestMapping("/")
     public String getHomePage() {
-        return "zeryf.html";
+        String test = this.userService.handleHello();
+        return "hello";
     }
 }
 
